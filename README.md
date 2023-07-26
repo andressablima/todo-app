@@ -32,4 +32,4 @@ Usuários devem conseguir:
 - Em breve
 
 ### Links 
-- LinkedIn: (https://www.linkedin.com/in/andressablima/)
+- LinkedIn: [Andressa Lima](https://www.linkedin.com/in/andressablima/)
