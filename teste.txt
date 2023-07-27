@@ -1,0 +1,44 @@
+
+Todo
+
+<!-- Add dynamic number -->
+items left All Active Completed Clear Completed Drag and drop to reorder
+list
+
+<div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">Your Name Here</a>.
+</div>
+
+
+
+
+    <header>
+      <div class="title">
+        <h1>ToDo List</h1>
+      </div>
+      <div class="mode">
+        <button class="change-mode" onclick="myFunction()">Light/Dark</button>
+      </div>
+    </header>
+    <main>
+      <div class="todo-container">
+        <div class="todo-list">
+          <input class="txt-input" type="text" placeholder="Add your todo" />
+          <input class="txt-input" type="text" placeholder="Add your todo" />
+          <input class="txt-input" type="text" placeholder="Add your todo" />
+          <input class="txt-input" type="text" placeholder="Add your todo" />
+          <input class="txt-input" type="text" placeholder="Add your todo" />
+          <input class="txt-input" type="text" placeholder="Add your todo" />
+        </div>
+      </div>
+    </main>
+
+
+
+ <!-- <button id="change" class="change-mode">
+    <img src="./images/icon-moon.svg" alt="" />
+      </button> -->
+    
