@@ -65,17 +65,16 @@
           </div>
         </div>
       </header>
-      <main>
-        <div class="todo-container">
-          <div class="todo-list">
-            <input class="txt-input" type="text" placeholder="Add your todo" />
-            <input class="txt-input" type="text" placeholder="Add your todo" />
-            <input class="txt-input" type="text" placeholder="Add your todo" />
-            <input class="txt-input" type="text" placeholder="Add your todo" />
-            <input class="txt-input" type="text" placeholder="Add your todo" />
-            <input class="txt-input" type="text" placeholder="Add your todo" />
-          </div>
+      <main class="todo-app">
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your task" />
+          <button class="add-task" onclick="addTask()">Add</button>
         </div>
+        <ul id="list-container">
+          <li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+        </ul>
       </main>
     </div>
   </body>

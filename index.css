@@ -36,45 +36,106 @@ header {
   background-color: transparent;
   border: none;
 }
-main {
-  background-color: hsl(0, 0%, 98%);
+.todo-app {
   width: 100%;
-  height: 100%;
-  grid-area: main;
+  height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  margin: 10px auto 5px;
+  padding: 1em 2em;
+  border-radius: 5px;
 }
-
-.todo-container {
+.row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 300px;
-  margin: 0 2em;
+  justify-content: space-between;
+  background-color: hsl(236, 33%, 92%);
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+button.add-task {
+  width: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  background-color: hsl(235, 19%, 35%);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button.add-task:hover {
+  background-color: hsl(236, 9%, 61%);
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 8px 8px 8px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
 }
 
-.todo-list {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px 20px;
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-color: #a160c1;
+  background-image: url(./images/icon-check.svg);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
 }
 
 @media (min-width: 768px) {
   header {
     background-image: url(./images/bg-desktop-light.jpg);
   }
-  [data-bs-theme="dark"] body {
+  [data-bs-theme="dark"] .main-container {
     background-image: url(./images/bg-desktop-dark.jpg);
   }
+  .todo-app {
+  }
+  button.add-task {
+  }
 }
-
-/* Main 
-
-.txt-input {
-  height: 3em;
-  border: 1px solid black;
-  display: flex;
-}
-*/
