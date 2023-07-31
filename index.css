@@ -20,6 +20,8 @@ header {
   background-image: url(./images/bg-mobile-light.jpg);
   background-repeat: no-repeat;
   color: white;
+  width: 100%;
+  height: 30%;
   grid-area: header;
 }
 
@@ -30,22 +32,27 @@ header {
 .title {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.title h1 {
+  font-weight: 700;
 }
 #change {
-  padding-left: 10em;
+  padding-left: 1em;
 }
-.change-mode {
+.change-mode,
+.change-dark {
   background-color: transparent;
   border: none;
+  padding-left: 1em;
 }
 .todo-app {
   width: 100%;
   height: 100vh;
-  margin: 10px auto 5px;
-  padding: 1em 2em;
+  margin: -30px auto 5px;
+  padding: 0em 2em;
   border-radius: 5px;
 }
 .row {
@@ -53,7 +60,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: hsl(236, 33%, 92%);
-  border-radius: 20px;
+  border-radius: 20px 8px 5px 20px;
   padding-left: 10px;
   margin-bottom: 15px;
 }
@@ -142,9 +149,9 @@ ul li span:hover {
   }
   .todo-app {
     width: 100%;
-    max-width: 800px;
-    margin: 50px auto 20px;
-    padding: 40px 30px 70px;
+    max-width: 600px;
+    margin: -40px auto 20px;
+    padding: 0px 30px 70px;
     border-radius: 10px;
   }
   .row {
@@ -152,7 +159,26 @@ ul li span:hover {
   }
   button.add-task {
     width: 20px;
-    padding: 16px 55px;
+    padding: 16px 40px;
     border-radius: 30px;
+  }
+}
+
+@media (min-width: 380px) {
+  header {
+    background-image: url(./images/bg-desktop-light.jpg);
+    background-size: cover;
+    height: 30%;
+  }
+  main {
+    margin-top: -10vh;
+  }
+  .todo-app {
+    top: -20vh;
+  }
+  [data-bs-theme="dark"] header {
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

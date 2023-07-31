@@ -1,0 +1,4 @@
+function myFunction() {
+  var element = document.body;
+  document.documentElement.setAttribute("data-bs-theme", "dark");
+}

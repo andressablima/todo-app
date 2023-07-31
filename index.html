@@ -55,12 +55,11 @@
         <div class="title">
           <h1>ToDo List</h1>
           <div class="mode">
-            <button class="change-mode">
-              <i
-                id="change"
-                class="bi bi-brightness-high-fill"
-                onclick="myFunction()"
-              ></i>
+            <button class="change-mode" onclick="lightMode()">
+              <i id="change" class="bi bi-brightness-high-fill"></i>
+            </button>
+            <button class="change-dark" onclick="darkMode()">
+              <i class="bi bi-moon"></i>
             </button>
           </div>
         </div>
@@ -68,7 +67,7 @@
       <main class="todo-app">
         <div class="row">
           <input type="text" id="input-box" placeholder="Add your task" />
-          <button class="add-task" onclick="addTask()">Add</button>
+          <button class="add-task" onclick="addTask()">ADD</button>
         </div>
         <ul id="list-container">
           <li class="checked">Task 1</li>
