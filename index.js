@@ -5,7 +5,7 @@ function myFunction() {
   var element = document.body;
   document.documentElement.setAttribute("data-bs-theme", "dark");
 }
-
+/*
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
   if (this.classList.toggle("bi-brightness-high-fill")) {
@@ -13,8 +13,9 @@ toggle.addEventListener("click", function () {
   } else {
     (body.style = "data-bs-theme"), "dark";
   }
-});
 
+});
+*/
 /* JS : TODO LIST */
 
 const inputBox = document.getElementById("input-box");
